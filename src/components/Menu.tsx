@@ -1,7 +1,15 @@
-import { currentUser } from "@clerk/nextjs/server";
+
 import Image from "next/image";
 import Link from "next/link";
 
+const currentUser = async () => {
+  // Simulating fetching current user data
+  return {
+    publicMetadata: {
+      role: "teacher", // Example role, replace with actual logic to fetch user role
+    },
+  };
+}
 const menuItems = [
   {
     title: "MENU",

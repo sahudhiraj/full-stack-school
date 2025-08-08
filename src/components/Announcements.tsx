@@ -1,5 +1,5 @@
 import prisma from "@/lib/prisma";
-import { auth } from "@clerk/nextjs/server";
+import { auth } from "@/lib/auth";
 
 const Announcements = async () => {
   const { userId, sessionClaims } = auth();

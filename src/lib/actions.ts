@@ -9,10 +9,9 @@ import {
   TeacherSchema,
 } from "./formValidationSchemas";
 import prisma from "./prisma";
-import { clerkClient } from "@clerk/nextjs/server";
 
 type CurrentState = { success: boolean; error: boolean };
-
+const clerkClient = {} as any;
 export const createSubject = async (
   currentState: CurrentState,
   data: SubjectSchema
